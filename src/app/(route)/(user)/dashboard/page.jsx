@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
 
 import DashboardLineGraph from "@/app/_components/graph/DashboardLineGraph";
 
 const page = () => {
   return (
-    <div className=" p-4 gap-2 flex h-screen 2xl:container overflow-y-scroll  scrollbar-thin scrollbar-thumb-gray-300  scrollbar-track-transparent">
+    <div className=" p-4 gap-2 flex h-full overflow-y-scroll  scrollbar-thin scrollbar-thumb-gray-300  scrollbar-track-transparent">
       <div className="  rounded-lg w-full">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold">Good Morning, John</h2>
@@ -179,61 +178,63 @@ const page = () => {
               Upcoming Interview
             </h3>
             {/*   employees info end  end  */}
-            <table className="w-full " cellPadding={7}>
-              <thead>
-                <tr>
-                  <th className="text-left text-sm font-medium text-gray-700">
-                    Employee Name
-                  </th>
-                  <th className="text-left text-sm font-medium text-gray-700">
-                    Employee Id
-                  </th>
-                  <th className="text-left text-sm font-medium text-gray-700">
-                    Employee Email
-                  </th>
-                  <th className="text-left text-sm font-medium text-gray-700">
-                    Employee Job
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {Array.from({ length: 5 }).map((ele, index) => {
-                  return (
-                    <tr key={index}>
-                      <td>
-                        <div className="flex gap-2 items-center">
-                          <figure>
-                            <Image
-                              className="object-cover w-10 h-10 rounded-circle aspect-square"
-                              src={
-                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqDV-X4JQ42D1BE148V2p9FuvBV0MvxNN4hA&s"
-                              }
-                              alt=""
-                              width={100}
-                              height={100}
-                            />
-                          </figure>
-                          <div className="flex-1 flex flex-col justify-center text-base font-medium  py-0.5">
-                            <h3 className="font-semibold text-gray-700 text-sm">
-                              Haybusa
-                            </h3>
+            <div className="overflow-x-auto scrollbar-thin">
+              <table className="min-w-full " cellPadding={7}>
+                <thead>
+                  <tr>
+                    <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                      Employee Name
+                    </th>
+                    <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                      Employee Id
+                    </th>
+                    <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                      Employee Email
+                    </th>
+                    <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                      Employee Job
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Array.from({ length: 5 }).map((ele, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>
+                          <div className="flex gap-2 items-center">
+                            <figure className="w-10 h-10">
+                              <Image
+                                className="object-cover  rounded-circle aspect-square"
+                                src={
+                                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqDV-X4JQ42D1BE148V2p9FuvBV0MvxNN4hA&s"
+                                }
+                                alt=""
+                                width={100}
+                                height={100}
+                              />
+                            </figure>
+                            <div className="flex-1 flex flex-col justify-center text-base font-medium  py-0.5">
+                              <h3 className="font-semibold text-gray-700 text-sm whitespace-nowrap">
+                                Haybusa
+                              </h3>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                      <td className="text-left text-sm font-medium  text-gray-700">
-                        #e422
-                      </td>
-                      <td className="text-left text-sm font-medium  text-gray-700">
-                        example@gmail.com
-                      </td>
-                      <td className="text-left text-sm font-medium  text-gray-700">
-                        Front End Developer
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                        </td>
+                        <td className="text-left text-sm font-medium  text-gray-700 whitespace-nowrap">
+                          #e422
+                        </td>
+                        <td className="text-left text-sm font-medium  text-gray-700 whitespace-nowrap">
+                          example@gmail.com
+                        </td>
+                        <td className="text-left text-sm font-medium  text-gray-700 whitespace-nowrap">
+                          Front End Developer
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
           {/* employees info end  */}
         </div>

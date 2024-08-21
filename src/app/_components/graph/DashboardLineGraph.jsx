@@ -11,6 +11,8 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { useEffect, useRef } from "react";
+
 // Register Chart.js components
 ChartJS.register(
   CategoryScale,
@@ -31,7 +33,7 @@ const data = {
     "May",
     "June",
     "July",
-    "Aughudt",
+    "August",
     "September",
     "October",
     "November",
@@ -46,7 +48,7 @@ const data = {
       fill: true,
     },
     {
-      label: "Monthly Sales",
+      label: "Monthly Revenue",
       data: [10, 33, 30, 33, 12, 55, 100, 10, 16, 30, 33, 77, 12, 100],
       fill: true,
       borderColor: "#888ea2",
@@ -54,9 +56,10 @@ const data = {
     },
   ],
 };
-// Options for the chart
+
 const options = {
   responsive: true,
+  maintainAspectRatio: false, // Ensures the chart resizes properly
   plugins: {
     legend: {
       position: "top",
@@ -70,8 +73,15 @@ const options = {
     },
   },
 };
+
 const DashboardGraph = () => {
-  return <Line data={data} options={options} />;
+  const graph = useRef(null);
+
+  return (
+    <div style={{ width: "100%", height: "300px" }}>
+      <Line data={data} options={options} ref={graph} />
+    </div>
+  );
 };
 
 export default DashboardGraph;

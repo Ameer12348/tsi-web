@@ -5,9 +5,9 @@ const MessagesComponent = () => {
   const [showMessagesAfterBreak, setshowMessagesAfterBreak] = useState(false);
 
   return (
-    <div className="px-2 py-3 gap-2 flex h-screen 2xl:container">
+    <div className="px-2 py-3 gap-2 flex h-full ">
       <div
-        className={`bg-white  px-5 rounded-lg  scrollbar-thin scrollbar-thumb-gray-300  scrollbar-track-transparent  overflow-y-scroll h-full pb-2 w-[40%] ${
+        className={`bg-white  px-5 rounded-lg   scrollbar-thin scrollbar-thumb-gray-300  scrollbar-track-transparent  overflow-y-scroll h-full pb-2 w-[40%] ${
           showMessagesAfterBreak
             ? " max-[1300px]:hidden "
             : "max-[1300px]:w-[100%]"
