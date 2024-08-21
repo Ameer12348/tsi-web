@@ -31,10 +31,9 @@ const page = ({ children }) => {
     { name: "Logout", icon: "fa-solid fa-arrow-right-from-bracket", link: "#" },
   ];
   return (
-    <DashboardSideBarNavigation
-      children={children}
-      navigationList={navigationList}
-    />
+    <DashboardSideBarNavigation navigationList={navigationList}>
+      {children}
+    </DashboardSideBarNavigation>
   );
 };
 

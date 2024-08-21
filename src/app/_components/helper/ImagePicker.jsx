@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import Image from "next/image";
 const ImagePicker = ({
   title,
   recommendedSize,
@@ -40,7 +41,12 @@ const ImagePicker = ({
             img: { width: "100%", height: "100%", objectFit: "cover" },
           }}
         >
-          <img src={selectedImage} alt="Selected" />
+          <Image
+            src={selectedImage}
+            width={2000}
+            height={2000}
+            alt="Selected"
+          />
           <button
             onClick={() => setSelectedImage(null)}
             className="absolute top-0 right-0 inline-flex justify-center items-center h-8 w-8 text-white rounded-circle bg-[#00000044]"
