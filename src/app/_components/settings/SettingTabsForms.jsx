@@ -26,19 +26,19 @@ const SettingTabsForms = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full overflow-x-auto scrollbar-thin">
+      <div className="scrollbar-thin w-full overflow-x-auto">
         <Tabs value={tab} onChange={handleChange} sx={{ marginBottom: 2 }}>
           <Tab
             label={
-              <div className="text-sm text-gray-500 flex items-center gap-1">
-                <i className="fa-regular fa-user  text-base"></i>
+              <div className="flex items-center gap-1 text-sm text-gray-500">
+                <i className="fa-regular fa-user text-base"></i>
                 <span>Employer Info</span>
               </div>
             }
           />
           <Tab
             label={
-              <div className="text-sm text-gray-500 flex items-center gap-1">
+              <div className="flex items-center gap-1 text-sm text-gray-500">
                 <i className="fa-regular fa-circle-user text-base"></i>
                 <span>Founding Info</span>
               </div>
@@ -46,7 +46,7 @@ const SettingTabsForms = () => {
           />
           <Tab
             label={
-              <div className="text-sm text-gray-500 flex items-center gap-1">
+              <div className="flex items-center gap-1 text-sm text-gray-500">
                 <i className="fa-solid fa-hashtag text-base"></i>
 
                 <span>Social Media Profile</span>
@@ -55,7 +55,7 @@ const SettingTabsForms = () => {
           />
           <Tab
             label={
-              <div className="text-sm text-gray-500 flex items-center gap-1">
+              <div className="flex items-center gap-1 text-sm text-gray-500">
                 <i className="fa-solid fa-gears text-base"></i>
                 <span>Account Setting</span>
               </div>
@@ -94,7 +94,7 @@ const SettingTabsForms = () => {
         {tab === 3 && <AccountSettings />}
       </div>
       {tab !== 3 && (
-        <button className="bg-blue-600 py-2 px-3 rounded text-sm text-white">
+        <button className="rounded bg-blue-600 px-3 py-2 text-sm text-white">
           Save Changes
         </button>
       )}

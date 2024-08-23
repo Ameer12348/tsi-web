@@ -49,13 +49,13 @@ const ImagePicker = ({
           />
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute top-0 right-0 inline-flex justify-center items-center h-8 w-8 text-white rounded-circle bg-[#00000044]"
+            className="absolute right-0 top-0 inline-flex h-8 w-8 items-center justify-center rounded-circle bg-[#00000044] text-white"
           >
             <i className="fa-solid fa-xmark"></i>{" "}
           </button>
         </Box>
       ) : (
-        <label className="flex-1 flex flex-col justify-center w-full items-center">
+        <label className="flex w-full flex-1 flex-col items-center justify-center">
           <CloudUploadIcon sx={{ fontSize: 40, color: "#ccc" }} />
           <Typography variant="body2">
             {title || "Browse photo or drop here"}

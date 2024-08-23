@@ -34,11 +34,11 @@ const FoundingInfo = ({
 }) => {
   return (
     <>
-      <div className="grid  grid-cols-3 gap-3 mb-3">
+      <div className="mb-3 grid grid-cols-3 gap-3 max-md:grid-cols-1">
         <div>
-          <h3 className="mb-2 text-sm  text-gray-800">Organization Type</h3>
+          <h3 className="mb-2 text-sm text-gray-800">Organization Type</h3>
           <select
-            className="w-full outline-0 border p-2 rounded "
+            className="w-full rounded border p-2 outline-0"
             value={organizationType}
             onChange={(e) => setOrganizationType(e.target.value)}
           >
@@ -51,9 +51,9 @@ const FoundingInfo = ({
         </div>
         {/* organization type end  */}
         <div>
-          <h3 className="mb-2  text-sm text-gray-800">Industry Type</h3>
+          <h3 className="mb-2 text-sm text-gray-800">Industry Type</h3>
           <select
-            className="w-full outline-0 border p-2 rounded "
+            className="w-full rounded border p-2 outline-0"
             value={industryType}
             onChange={(e) => setIndustryType(e.target.value)}
           >
@@ -66,9 +66,9 @@ const FoundingInfo = ({
         </div>
         {/* industry Type end  */}
         <div>
-          <h3 className="mb-2  text-sm text-gray-800">Team Size</h3>
+          <h3 className="mb-2 text-sm text-gray-800">Team Size</h3>
           <select
-            className="w-full outline-0 border p-2 rounded "
+            className="w-full rounded border p-2 outline-0"
             value={teamSize}
             onChange={(e) => setTeamSize(e.target.value)}
           >
@@ -81,12 +81,12 @@ const FoundingInfo = ({
         </div>
         {/* team size end  */}
       </div>
-      <div className="grid grid-cols-2 gap-3 mb-3">
+      <div className="mb-3 grid grid-cols-2 gap-3 max-md:grid-cols-1">
         <div>
           <h3 className="mb-2 text-sm text-gray-800">Year of establishment</h3>
           <input
             type="date"
-            className="w-full outline-0 border p-2 rounded text-gray-800 border-gray-400"
+            className="w-full rounded border border-gray-400 p-2 text-gray-800 outline-0"
             placeholder="Year of establishment"
             value={yearOfEstablishment}
             onChange={(e) => setYearOfEstablishment(e.target.value)}
@@ -97,7 +97,7 @@ const FoundingInfo = ({
           <h3 className="mb-2 text-sm text-gray-800">Website Url</h3>
           <input
             type="text"
-            className="w-full outline-0 border p-2 rounded text-gray-800 border-gray-400"
+            className="w-full rounded border border-gray-400 p-2 text-gray-800 outline-0"
             placeholder="Website Url"
             value={websiteUrl}
             onChange={(e) => setWebsiteUrl(e.target.value)}

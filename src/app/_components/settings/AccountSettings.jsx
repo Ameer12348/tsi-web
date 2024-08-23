@@ -84,6 +84,7 @@ const AccountSettings = () => {
                 type="password"
                 className="w-full outline-0 border p-2 rounded text-gray-800 border-gray-400"
                 placeholder="Password"
+                autoComplete={false}
                 //   value={websiteUrl}
                 //   onChange={(e) => setWebsiteUrl(e.target.value)}
               />
@@ -95,6 +96,7 @@ const AccountSettings = () => {
                 type="password"
                 className="w-full outline-0 border p-2 rounded text-gray-800 border-gray-400"
                 placeholder="Confirm Password"
+                autoComplete={false}
                 //   value={websiteUrl}
                 //   onChange={(e) => setWebsiteUrl(e.target.value)}
               />

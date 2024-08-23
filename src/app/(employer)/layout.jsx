@@ -22,7 +22,7 @@ const page = ({ children }) => {
     { name: "Authorize Manager", icon: "fa-solid fa-shield-halved", link: "#" },
     { name: "My Profile", icon: "fa-regular fa-user", link: "#" },
     { name: "My Jobs", icon: "fa-solid fa-briefcase", link: "/my-jobs" },
-    { name: "Post a Job", icon: "fa-solid fa-plus", link: "#" },
+    { name: "Post a Job", icon: "fa-solid fa-plus", link: "/post-a-job" },
     { name: "Saved Employee", icon: "fa-regular fa-bookmark", link: "#" },
     { name: "Plan & Billing", icon: "fa-solid fa-file-invoice", link: "#" },
     { name: "Messages", icon: "fa-regular fa-comment-dots", link: "/messages" },

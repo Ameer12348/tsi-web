@@ -5,7 +5,7 @@ const MessagesComponent = () => {
   const [showMessagesAfterBreak, setshowMessagesAfterBreak] = useState(false);
 
   return (
-    <div className="px-2 py-3 gap-2 flex h-full ">
+    <div className="px-2 py-3 gap-2 flex h-[calc(100vh-55.9688px)] ">
       <div
         className={`bg-white  px-5 rounded-lg   scrollbar-thin scrollbar-thumb-gray-300  scrollbar-track-transparent  overflow-y-scroll h-full pb-2 w-[40%] ${
           showMessagesAfterBreak

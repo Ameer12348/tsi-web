@@ -7,45 +7,43 @@ const DashboardSideBarNavigation = ({ children, navigationList }) => {
   const [sideNavShow, setSideNavShow] = useState(true);
   return (
     <>
-      <div className="flex  bg-[#f3f3f3] h-screen">
+      <div className="flex h-screen bg-[#f3f3f3]">
         <div
-          className={`duration-200 h-full ${
-            sideNavShow ? "xl:w-[300px]  " : "w-0  "
+          className={`h-full duration-200 ${
+            sideNavShow ? "xl:w-[300px]" : "w-0"
           } `}
         ></div>
         {/* empty container 300px  end  */}
         <div className="flex-1">
-          <div className="bg-white  py-2 px-5 sticky top-0">
+          <div className="sticky top-0 z-[1000000] bg-white px-5 py-2">
             <button
-              className={` inline-flex justify-center items-center  outline-0 text-3xl p-1 mx-3 duration-0  ${
+              className={`mx-3 inline-flex items-center justify-center p-1 text-3xl outline-0 duration-0 ${
                 sideNavShow
-                  ? " [transform:rotateY(0deg)]"
-                  : " [transform:rotateY(180deg)]"
+                  ? "[transform:rotateY(0deg)]"
+                  : "[transform:rotateY(180deg)]"
               }`}
               onClick={() => setSideNavShow(!sideNavShow)}
             >
               <div
-                className={`inline-block duration-200  ${
-                  sideNavShow ? "max-xl:w-[300px]  " : "w-0  "
+                className={`inline-block duration-200 ${
+                  sideNavShow ? "max-xl:w-[300px]" : "w-0"
                 }`}
               ></div>{" "}
               <MdMenuOpen />
             </button>
           </div>
-          <div className="w-full h-[calc(100vh-55.9688px)] 2xl:container">
-            {children}
-          </div>
+          <div className="w-full 2xl:container">{children}</div>
         </div>
       </div>
       <div
-        className={`w-[300px] fixed top-0 duration-200  p-4 h-screen bg-white scrollbar-thin scrollbar-thumb-gray-300  scrollbar-track-transparent  overflow-y-scroll ${
+        className={`scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent fixed top-0 h-screen w-[300px] overflow-y-scroll bg-white p-4 duration-200 ${
           sideNavShow ? "left-0" : "-left-full"
         } `}
       >
-        <div className="flex justify-between items-center mb-2">
-          <h5 className="px-1.5  text-gray-800 font-medium  text-lg">Menu</h5>
+        <div className="mb-2 flex items-center justify-between">
+          <h5 className="px-1.5 text-lg font-medium text-gray-800">Menu</h5>
           <button
-            className="min-[500px]:hidden "
+            className="min-[500px]:hidden"
             onClick={() => setSideNavShow(!sideNavShow)}
           >
             Close
