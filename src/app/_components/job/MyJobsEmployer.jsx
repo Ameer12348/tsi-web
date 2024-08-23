@@ -56,6 +56,7 @@ const MyJobsEmployer = () => {
             <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
+        {/* pagination buttons end  */}
       </div>
     </div>
   );

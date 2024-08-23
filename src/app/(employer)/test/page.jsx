@@ -8,43 +8,43 @@ const page = () => {
           return (
             <div
               key={index}
-              className="p-4 bg-white rounded-lg flex items-center gap-2"
+              className="flex items-center gap-2 rounded-lg bg-white p-4"
             >
-              <div className="bg-blue-400 rounded-circle w-16 h-16"></div>
+              <div className="h-16 w-16 rounded-circle bg-blue-400"></div>
               {/* circle end  */}
               <div className="flex-1">
-                <h5 className="text-gray-600 font-medium text-sm">Budget</h5>
-                <div className="flex  gap-1 items-end">
+                <h5 className="text-sm font-medium text-gray-600">Budget</h5>
+                <div className="flex items-end gap-1">
                   <p className="text-2xl font-bold">25.09K</p>
-                  <p className="text-orange-700 font-medium"> +7% </p>
+                  <p className="font-medium text-orange-700"> +7% </p>
                 </div>
-                <p className="text-gray-500 text-sm">Last Month</p>
+                <p className="text-sm text-gray-500">Last Month</p>
               </div>
             </div>
           );
         })}
-        <div className="overflow-x-auto border-t bg-white rounded-lg scrollbar-thin p-4 col-span-full">
-          <h1 className="text-lg font-bold text-gray-800 mb-4">Applications</h1>
-          <table className="min-w-full " cellPadding={10}>
+        <div className="scrollbar-thin col-span-full overflow-x-auto rounded-lg border-t bg-white p-4">
+          <h1 className="mb-4 text-lg font-bold text-gray-800">Applications</h1>
+          <table className="mb-4 min-w-full" cellPadding={10}>
             <thead className="border-b">
               <tr>
-                <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                <th className="whitespace-nowrap text-left text-sm font-medium text-gray-700">
                   Employee Name
                 </th>
-                <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                <th className="whitespace-nowrap text-left text-sm font-medium text-gray-700">
                   Date
                 </th>
-                <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                <th className="whitespace-nowrap text-left text-sm font-medium text-gray-700">
                   Company
                 </th>
-                <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                <th className="whitespace-nowrap text-left text-sm font-medium text-gray-700">
                   Offer
                 </th>
-                <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                <th className="whitespace-nowrap text-left text-sm font-medium text-gray-700">
                   Meeting
                 </th>
 
-                <th className="text-left text-sm font-medium text-gray-700 whitespace-nowrap">
+                <th className="whitespace-nowrap text-left text-sm font-medium text-gray-700">
                   Actions
                 </th>
               </tr>
@@ -54,10 +54,10 @@ const page = () => {
                 return (
                   <tr key={index}>
                     <td>
-                      <div className="flex gap-2 items-center">
-                        <figure className="w-10 h-10">
+                      <div className="flex items-center gap-2">
+                        <figure className="h-10 w-10">
                           <Image
-                            className="object-cover  rounded-circle aspect-square"
+                            className="aspect-square rounded-circle object-cover"
                             src={
                               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqDV-X4JQ42D1BE148V2p9FuvBV0MvxNN4hA&s"
                             }
@@ -66,11 +66,11 @@ const page = () => {
                             height={100}
                           />
                         </figure>
-                        <h3 className="font-semibold  leading-none">Haybusa</h3>
+                        <h3 className="font-semibold leading-none">Haybusa</h3>
                       </div>
                     </td>
                     {/* employee name email and pic end  */}
-                    <td className="text-left  text-sm  text-gray-500 whitespace-nowrap">
+                    <td className="whitespace-nowrap text-left text-sm text-gray-500">
                       {new Date().toLocaleDateString("en-US", {
                         day: "2-digit",
                         month: "short",
@@ -79,10 +79,10 @@ const page = () => {
                     </td>
                     {/* date end  */}
                     <td>
-                      <div className="flex gap-2 items-center">
-                        <figure className="w-10 h-10">
+                      <div className="flex items-center gap-2">
+                        <figure className="h-10 w-10">
                           <Image
-                            className="object-cover  rounded-circle aspect-square"
+                            className="aspect-square rounded-circle object-cover"
                             src={
                               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqDV-X4JQ42D1BE148V2p9FuvBV0MvxNN4hA&s"
                             }
@@ -91,21 +91,21 @@ const page = () => {
                             height={100}
                           />
                         </figure>
-                        <h3 className=" text-sm leading-none">Figma</h3>
+                        <h3 className="text-sm leading-none">Figma</h3>
                       </div>
                     </td>
-                    <td className="text-left  text-sm  text-gray-500 whitespace-nowrap">
+                    <td className="whitespace-nowrap text-left text-sm text-gray-500">
                       $2500
                     </td>
-                    <td className="text-left  text-sm  text-gray-500 whitespace-nowrap">
-                      <div className="bg-blue-100 text-blue-600 text-center inline-block px-2 py-1 rounded">
+                    <td className="whitespace-nowrap text-left text-sm text-gray-500">
+                      <div className="inline-block rounded bg-blue-100 px-2 py-1 text-center text-blue-600">
                         Sheduled
                       </div>
                     </td>
 
-                    <td className="text-left   text-gray-500 whitespace-nowrap">
-                      <div className="flex gap-3 items-center">
-                        <button className="text-blue-900 border text-sm border-blue-900 px-2.5 rounded-lg py-1  font-medium  items-center">
+                    <td className="whitespace-nowrap text-left text-gray-500">
+                      <div className="flex items-center gap-3">
+                        <button className="items-center rounded-lg border border-blue-900 px-2.5 py-1 text-sm font-medium text-blue-900">
                           <span>View Offer</span>
                         </button>
                       </div>
@@ -115,6 +115,34 @@ const page = () => {
               })}
             </tbody>
           </table>
+          <div className="flex justify-end gap-1 py-2">
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <span>1</span>
+            </button>
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <span>2</span>
+            </button>
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 bg-gray-500 text-white">
+              <span>3</span>
+            </button>
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <span>...</span>
+            </button>
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <span>4</span>
+            </button>
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <span>5</span>
+            </button>
+
+            <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          {/* pagination buttons end  */}
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import DashboardSideBarNavigation from "@/app/_components/sidebar/DashboardSideB
 
 const page = ({ children }) => {
   const navigationList = [
+    { name: "Overview", icon: "fa-solid fa-table-columns", link: "/overview" },
     { name: "Dashboard", icon: "fa-solid fa-chart-line", link: "/dashboard" },
     {
       name: "Employee List",
