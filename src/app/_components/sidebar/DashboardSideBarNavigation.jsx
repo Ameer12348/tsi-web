@@ -32,7 +32,9 @@ const DashboardSideBarNavigation = ({ children, navigationList }) => {
               <MdMenuOpen />
             </button>
           </div>
-          <div className="w-full 2xl:container">{children}</div>
+          <div className="scrollbar-thin h-[calc(100vh-60px)] w-full overflow-y-scroll 2xl:container">
+            {children}
+          </div>
         </div>
       </div>
       <div
