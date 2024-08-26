@@ -31,7 +31,7 @@ const MyJobsEmployer = () => {
         </div>
         <div className="flex justify-end gap-1 py-2">
           <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
-            <i class="fa-solid fa-chevron-left"></i>
+            <i className="fa-solid fa-chevron-left"></i>
           </button>
           <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
             <span>1</span>
@@ -53,7 +53,7 @@ const MyJobsEmployer = () => {
           </button>
 
           <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
-            <i class="fa-solid fa-chevron-right"></i>
+            <i className="fa-solid fa-chevron-right"></i>
           </button>
         </div>
         {/* pagination buttons end  */}

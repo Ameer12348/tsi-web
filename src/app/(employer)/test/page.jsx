@@ -23,7 +23,7 @@ const page = () => {
             </div>
           );
         })}
-        <div className="scrollbar-thin col-span-full overflow-x-auto rounded-lg border-t bg-white p-4">
+        <div className="col-span-full overflow-x-auto rounded-lg border-t bg-white p-4 scrollbar-thin">
           <h1 className="mb-4 text-lg font-bold text-gray-800">Applications</h1>
           <table className="mb-4 min-w-full" cellPadding={10}>
             <thead className="border-b">
@@ -117,7 +117,7 @@ const page = () => {
           </table>
           <div className="flex justify-end gap-1 py-2">
             <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
-              <i class="fa-solid fa-chevron-left"></i>
+              <i className="fa-solid fa-chevron-left"></i>
             </button>
             <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
               <span>1</span>
@@ -139,7 +139,7 @@ const page = () => {
             </button>
 
             <button className="flex h-8 w-8 items-center justify-center rounded border border-gray-300 text-gray-500">
-              <i class="fa-solid fa-chevron-right"></i>
+              <i className="fa-solid fa-chevron-right"></i>
             </button>
           </div>
           {/* pagination buttons end  */}

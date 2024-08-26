@@ -7,7 +7,7 @@ const MyJobCard = () => {
         Senior Backend Developer
       </h5>
       <div className="mb-3 flex items-center gap-2">
-        <i class="fa-solid fa-circle text-[10px] text-green-500"></i>
+        <i className="fa-solid fa-circle text-[10px] text-green-500"></i>
         <span className="me-3 font-medium text-green-500">Active Search</span>
         <span className="text-sm font-medium text-gray-600">1 min ago</span>
       </div>

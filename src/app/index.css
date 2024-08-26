@@ -5,3 +5,15 @@
 * {
   box-sizing: border-box;
 }
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  min-width: 100%;
+}
+table > * {
+  white-space: nowrap;
+}

@@ -37,7 +37,7 @@ const SocialMediaProfile = ({ links, setLinks }) => {
               name="platform"
               value={link.platform}
               onChange={(event) => handleChange(index, event)}
-              className="block w-48 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="block w-48 rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             >
               {socialLinksArray.map((ele, index) => (
                 <option key={index} value={ele.value}>
@@ -51,14 +51,14 @@ const SocialMediaProfile = ({ links, setLinks }) => {
               placeholder="https://example.com"
               value={link.url}
               onChange={(event) => handleChange(index, event)}
-              className="block w-full flex-1 py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="block w-full flex-1 rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             />
             <button
               type="button"
               onClick={() => handleRemove(index)}
-              className=" text-red-700  p-2 text-center"
+              className="p-2 text-center text-red-700"
             >
-              <i class="fa-solid fa-trash-can"></i>
+              <i className="fa-solid fa-trash-can"></i>
             </button>
           </div>
         ))}
@@ -66,7 +66,7 @@ const SocialMediaProfile = ({ links, setLinks }) => {
           <button
             type="button"
             onClick={handleAdd}
-            className="text-gray-800 bg-gray-300 hover:bg-gray-700 hover:text-white duration-300  focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-sm px-4 py-2 "
+            className="rounded-md bg-gray-300 px-4 py-2 text-sm font-medium text-gray-800 duration-300 hover:bg-gray-700 hover:text-white focus:ring-4 focus:ring-blue-300"
           >
             <i className="fa-solid fa-plus me-1"></i>
             Add New Social Link

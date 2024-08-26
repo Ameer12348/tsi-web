@@ -10,20 +10,7 @@ const page = () => {
       <div className="rounded-lg bg-white">
         <div className="flex justify-between border-b p-4">
           <div>
-            <h1 className="text-lg font-medium">Employee List</h1>
-          </div>
-          <div className="flex gap-2">
-            <button className="rounded bg-[#51b206] px-3 py-1 text-white">
-              <i className="fa-solid fa-download me-1"></i>
-              Export
-            </button>
-            <Link
-              className="rounded bg-[#51b206] px-3 py-1 text-white"
-              href={"/employees-list/create"}
-            >
-              <i className="fa-solid fa-plus me-1"></i>
-              Create
-            </Link>
+            <h1 className="text-lg font-medium">Saved Employee</h1>
           </div>
         </div>
         {/* employee list heading and create button container  end  */}

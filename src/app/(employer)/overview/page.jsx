@@ -5,7 +5,7 @@ const page = () => {
     <div className="p-4">
       <div className="rounded-lg bg-white p-4">
         <div className="mb-4">
-          <h1 className="mb-3 text-2xl font-medium text-gray-900">My Jobs</h1>
+          <h1 className="mb-3 text-2xl font-medium text-gray-900">Overview</h1>
           <p className="text-sm text-gray-700">
             Here are your daily activities & career opportunities
           </p>
@@ -17,7 +17,7 @@ const page = () => {
               <p className="text-[12px] text-gray-600">Open Job</p>
             </div>
             <div className="flex h-14 w-14 items-center justify-center rounded bg-white text-3xl text-blue-500">
-              <i class="fa-solid fa-briefcase"></i>
+              <i className="fa-solid fa-briefcase"></i>
             </div>
           </div>
           {/* open job end  */}
@@ -27,7 +27,7 @@ const page = () => {
               <p className="text-[12px] text-gray-600">Saved Employee</p>
             </div>
             <div className="flex h-14 w-14 items-center justify-center rounded bg-white text-3xl text-orange-500">
-              <i class="fa-regular fa-address-card"></i>
+              <i className="fa-regular fa-address-card"></i>
             </div>
           </div>
           {/* saved employee end  */}
@@ -37,7 +37,7 @@ const page = () => {
               <p className="text-[12px] text-gray-600">Pending Jobs</p>
             </div>
             <div className="flex h-14 w-14 items-center justify-center rounded bg-white text-3xl text-orange-500">
-              <i class="fa-solid fa-clock"></i>
+              <i className="fa-solid fa-clock"></i>
             </div>
           </div>
           {/* pending jobs end  */}
@@ -51,7 +51,7 @@ const page = () => {
             <div className="flex flex-col items-start justify-center gap-1 ps-2">
               <p className="flex items-end justify-start gap-2 text-2xl">
                 <span className="text-lg text-green-500">
-                  <i class="fa-solid fa-check"></i>
+                  <i className="fa-solid fa-check"></i>
                 </span>
                 <span className="font-medium">12</span>
               </p>
@@ -61,7 +61,7 @@ const page = () => {
             <div className="flex flex-col items-start justify-center gap-1 ps-2">
               <p className="flex items-end justify-start gap-2 text-2xl">
                 <span className="text-lg text-red-500">
-                  <i class="fa-solid fa-bolt"></i>
+                  <i className="fa-solid fa-bolt"></i>
                 </span>
                 <span className="font-medium">0</span>
               </p>
@@ -71,7 +71,7 @@ const page = () => {
             <div className="flex flex-col items-start justify-center gap-1 ps-2">
               <p className="flex items-end justify-start gap-2 text-2xl">
                 <span className="text-lg text-blue-500">
-                  <i class="fa-solid fa-circle-arrow-up"></i>
+                  <i className="fa-solid fa-circle-arrow-up"></i>
                 </span>
                 <span className="font-medium">0</span>
               </p>
@@ -81,7 +81,7 @@ const page = () => {
             <div className="flex flex-col items-start justify-center gap-1 ps-2">
               <p className="flex items-end justify-start gap-2 text-2xl">
                 <span className="text-lg text-blue-500">
-                  <i class="fa-solid fa-user-group"></i>
+                  <i className="fa-solid fa-user-group"></i>
                 </span>
                 <span className="font-medium">0</span>
               </p>
@@ -98,11 +98,11 @@ const page = () => {
           <h6 className="text-lg font-medium text-gray-600">Recent Jobs</h6>
           <button className="flex items-center gap-2 text-sm font-medium text-blue-600">
             <span>View All</span>
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
         {/* recent jobs end */}
-        <div className="mb-4 w-full overflow-x-hidden">
+        <div className="table-responsive mb-4 w-full">
           <table className="mx-auto w-full max-w-[1200px]" cellPadding={15}>
             <thead className="bg-gray-100">
               <tr>
@@ -131,13 +131,13 @@ const page = () => {
                   </td>
                   <td>
                     <div className="flex items-center justify-center gap-2 text-gray-600">
-                      <i class="fa-regular fa-circle-check text-lg"></i>
+                      <i className="fa-regular fa-circle-check text-lg"></i>
                       <span>Active</span>
                     </div>
                   </td>
                   <td>
                     <div className="flex items-center justify-center gap-2 text-gray-600">
-                      <i class="fa-regular fa-address-card text-lg"></i>
+                      <i className="fa-regular fa-address-card text-lg"></i>
                       <span>Active</span>
                     </div>
                   </td>
@@ -147,7 +147,7 @@ const page = () => {
                         View Application
                       </button>
                       <button className="px-2 text-2xl text-gray-700">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i className="fa-solid fa-ellipsis-vertical"></i>
                       </button>
                     </div>
                   </td>
